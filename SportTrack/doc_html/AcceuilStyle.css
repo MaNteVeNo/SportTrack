@@ -1,0 +1,135 @@
+/* Réinitialisation des styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de la navbar 
+header.hidden {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+*/
+header {
+    background-color: #333; /* Couleur de fond de la navbar */
+    color: #fff; /* Couleur du texte */
+    padding: 2px 0; /* Espace intérieur de la navbar */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: auto;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#logoTempo {
+    
+    max-width: 10%; /* Définit la largeur maximale de l'image en pourcentage */
+    max-height: 10%; /* Définit la hauteur maximale de l'image en pourcentage */
+    width: auto; /* Permet à l'image de conserver son ratio hauteur/largeur */
+    height: auto;
+    margin-left: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 35px; /* Espacement entre les éléments de la liste */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Aucun espacement à droite pour le dernier élément */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+/* *********************************************************** */
+
+/* Section - Info */
+.infoDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    height: 100vh; /* Hauteur égale à 100% de la hauteur de la fenêtre */
+    width: 100vw;
+    background-image: url('imageST/SurfST.jpg');
+    background-size: cover; /* Ajuste la taille de l'image pour s'adapter entièrement à la zone */
+    background-repeat: no-repeat; /* Empêche la répétition des images */
+    background-position: center; /* Positionne l'images au centre */
+}
+
+#descriptifApp{
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 40vw;
+    background-color: rgba(235, 173, 155, 0.5); /* Fond blanc avec une opacité de 80% */
+    padding: 20px; /* Espacement intérieur */
+    text-align: center; /* Centre le texte horizontalement */
+    margin-top: -5%; /* Espace en haut de la div */ 
+}
+
+.logoApp{
+    justify-content: center;
+    align-items: center;
+}
+
+#imgBTDesc{
+    max-width: 65%; /* Définit la largeur maximale de l'image en pourcentage de son contenant */
+    max-height: 65%; /* Définit la hauteur maximale de l'image en pourcentage de son contenant */
+    margin-left: 25%;
+}
+
+/* Styles pour le bouton avec l'icône de flèche */
+
+.infoBio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 0 2px;
+}
+#info{
+    margin-right: 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#bt-Info{
+    margin-left: 0;
+}
+.arrow-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styles pour l'icône de flèche (Font Awesome) */
+.fa-arrow-right {
+    margin-left: 5px; /* Espace entre le texte du bouton et l'icône de flèche */
+}
